@@ -36,7 +36,7 @@ frappe.ready(async function() {
             const getFilterdegreeOptions = () => {
                 return new Promise((resolve, reject) => {
                     frappe.call({
-                        method: "inventory_ishan.inventory_ishan.custom_script.api.get_filter_city_option",
+                        method: "api_path",
                         args: {
                             state: currentState, // Use the updated state value
                         },
